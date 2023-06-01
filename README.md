@@ -3,7 +3,7 @@ Calculates the specified section's checksum on a gen3 .sav file. Coded in C.
 
 This program is the first step to save file editing and can be used to create larger programs.
 
-Run "make" to build the program.
+Run "make" to build the program with gcc.
 
 The program takes two arguments: The .sav file path and the section being calculated respectively.
 
