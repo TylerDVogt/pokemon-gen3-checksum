@@ -18,6 +18,7 @@ There are 14 sections, each being 4096 bytes,
 ![image](https://github.com/TylerDVogt/pokemon-gen3-checksum/assets/89884480/2cc2d029-9e95-4ee5-b2e8-4331275460d9)
 
 Each section is 4096 bytes despite the table above being less. This is because there is other random data stored in each section such as pokedex data.
+An easy way to find a section is to search for the signature magic number 0x08012025 in little-endian format. Two bytes before this is the section id. Make sure you are editing the correct save block.
 
 
 
