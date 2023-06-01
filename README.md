@@ -1,5 +1,7 @@
 # pokemon-gen3-checksum
-Calculates the specified section's checksum on a gen3 .sav file.
+Calculates the specified section's checksum on a gen3 .sav file. Coded in C.
+
+This program is the first step to save file editing and can be used to create larger programs.
 
 Run "make" to build the program.
 
@@ -19,7 +21,3 @@ There are 14 sections, each being 4096 bytes,
 
 Each section is 4096 bytes despite the table above being less. This is because there is other random data stored in each section such as pokedex data.
 An easy way to find a section is to search for the signature magic number 0x08012025 in little-endian format. Two bytes before this is the section id. Make sure you are editing the correct save block.
-
-
-
-
